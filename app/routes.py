@@ -15,6 +15,21 @@ def index():
     return render_template("index.html")
 
 
+@app.route('/programming')
+def programming():
+    return render_template("сourses/programming.html")
+
+
+@app.route('/english')
+def english():
+    return render_template("сourses/english.html")
+
+
+@app.route('/courses')
+def courses():
+    return render_template("сourses/courses.html")
+
+
 # @app.route('/login', methods=['GET', 'POST'])
 # def login():
 #     form = LoginForm()
