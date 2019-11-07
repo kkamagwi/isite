@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<!--
+	Strongly Typed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Strongly Typed by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/static/assets/css/main.css" />
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+					<div class="container">
+
+						<!-- Logo -->
+							<h1 id="logo"><a href="{{ url_for('index') }}">iStudy</a></h1>
+							<p>Мы учим как осуществлять мечты!</p>
+
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li><a class="icon solid fa-home" href="index.html"><span>Главная</span></a></li>
+									<li>
+										<a href="#" class="icon fa-chart-bar"><span>курсы</span></a>
+										<ul>
+											<li><a href="#">Программирование</a></li>
+											<li><a href="#">Писательское мастерство</a></li>
+											<li><a href="#">Английский язык</a></li>
+											<li><a href="#">Тренинги</a>
+												<ul>
+													<li><a href="#">Ментальная арифметика через игры</a></li>
+													<li><a href="#">Рассказ за час</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Продвинутый пользователь</a></li>
+										</ul>
+									</li>
+									<li><a class="icon solid fa-cog" href="left-sidebar.html"><span>Наш состав</span></a></li>
+									<li><a class="icon solid fa-retweet" href="right-sidebar.html"><span>Наша миссия</span></a></li>
+									<li><a class="icon solid fa-sitemap" href="login"><span>Логин/Регистация</span></a></li>
+								</ul>
+							</nav>
+
+					</div>
+				</section>
+
+        {% block content %}
+        {% endblock %}
+
+
+    </body>
+</html>

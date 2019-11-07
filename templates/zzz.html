@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Рецепты от Миранды</title>
+  <style type="text/css">
+   body {
+    font: 10pt Arial, Helvetica, sans-serif; /* Шрифт на веб-странице */
+    background: #54463d; /* Цвет фона */
+    margin: 0; /* Убираем отступы */
+   }
+   h2 {
+    font-size: 11pt; /* Размер шрифта */
+    color: #752641; /* Цвет текста */
+    margin-bottom: 0; /* Отступ снизу */
+   }
+   #container {
+    width: 500px; /* Ширина макета */
+    margin: 0 auto; /* Выравниваем по центру */
+   }
+   #header {
+    background: #8fa09b; /* Цвет фона */
+    font-size: 20pt; /* Размер текста */
+    color: #edeed5; /* Цвет текста */
+    padding: 15px; /* Отступы вокруг текста */
+   }
+   #content {
+    margin-right: 140px; /* Отступ справа */
+    padding: 10px; /* Поля вокруг текста */
+    background: #fff; /* Цвет фона левой колонки */
+   }
+   #content p {
+    margin-top: 0.3em /* Отступ сверху */
+   }
+   #sidebar {
+    float: right; /* Обтекание по левому краю */
+    width: 120px; /* Ширина правой колонки */
+    padding: 10px; /* Отступы вокруг текста */
+    background: #cbc0b7; /* Цвет фона */
+   }
+   #sidebar a {
+    color: #752641; /* Цвет ссылок */
+   }
+   #footer {
+    background: #8fa09b; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    padding: 5px; /* Отступы вокруг текста */
+    margin-top: 15px; /* Отступ сверху */
+   }
+  </style>
+ </head>
+ <body>
+  <div id="container">
+   <div id="header">Рецепты от Миранды</div>
+   <div id="sidebar">
+    <p><a href="popular.html">Популярные рецепты</a></p>
+    <p><a href="day.html">Рецепт дня</a></p>
+    <p><a href="apple.html">Рецепты на основе яблок</a></p>
+    <p><a href="ice.html">Рецепты на основе льда</a></p>
+    <p><a href="hliv.html">Рецепты из хлива и хрольва</a></p>
+   </div>
+   <div id="content">
+        <table>
+            {% for item in items %}
+            <tr>
+                <td>{{ item.content }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    <h2>Рома!</h2>
+    <p>Очистить от ядрышек 2 кг. грецких орехов. Растолочь скорлупу и смешать с фруктами
+    в 2 литрах рома. Употреблять 3–4 раза в день.</p>
+    <h2>Кровавая Мери</h2>
+    <p>Влить в бокал хорошую 100% кровь по лезвию ножа. Влить водку &laquo;Смирновскую&raquo;.
+    Пить залпом.</p>
+    <h2>Грог по-рыбацки</h2>
+    <p>1 рыбу залить кипятком, через 5 минут процедить и добавить грога. Подавать в чашках.</p>
+    <h2>Хвангур</h2>
+    <p>Сварить на медленном огне воду. Добавить в нее хлива и хрольва. Довести до кипения.</p>
+    <h2>Царская водка</h2>
+    <p>Смешать 2 части соляной кислоты и 1 часть азотной со льдом. Слить охлажденную смесь
+    в фужер. Пить залпом.</p>
+    <h2>HotDog</h2>
+    <p>Тщательно промойте косточки и сварите из них бульон. Подавать горячим.</p>
+    <h2>Fireball</h2>
+    <p>В большой бокал положить лед, вылить на него все компоненты и положить кружок лимона.</p>
+   </div>
+   <div id="footer">&copy; Влад Мержевич</div>
+  </div>
+ </body>
+</html>
