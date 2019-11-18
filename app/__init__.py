@@ -8,7 +8,8 @@ app = Flask(__name__,
             # template_folder='/Users/laptop/PycharmProjects/untitled2/templates',
             # static_folder='/Users/laptop/PycharmProjects/untitled2/static'
             )
-app.config['SQLALCHEMY_DATABASE_URI']= 'postgresql://localhost:5432/site'
+app.config['SQLALCHEMY_DATABASE_URI']= 'postgres://yqcqbqkysnwyeh:f58a9fd562c92aee6888146df19218f63b2315ca37db27718d3c422bbdae8855@ec2-107-21-226-44.compute-1.amazonaws.com:5432/df55cgfitgbcpv'
+    # 'postgresql://localhost:5432/site'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
 db = SQLAlchemy(app)
 login = LoginManager(app)
