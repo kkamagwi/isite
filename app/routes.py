@@ -56,7 +56,7 @@ def success():
 
 @app.route('/courses')
 def courses():
-    return render_template("сourses/courses.html")
+    return render_template("courses.html")
 
 
 
